@@ -45,4 +45,40 @@ public class LinkedList<T> {
         result += "NULL";
         return result;
     }
+
+
+    //append adds a new node with the given value to the end of the list
+    public void append(T value) {
+        Node current=head;
+        while (current.next!=null){
+            current=current.next;
+            }
+        Node newNode = new Node(value);
+        current.next=newNode;
+        newNode.next=null;
+        }
+
+//adds a new node with the given new value immediately before the first node that has the value specified
+    public void insertBefore(T y,T value){
+        Node current=head;
+        while (current.next.value!=y){
+            current=current.next;
+        }
+        Node newNode = new Node(value);
+        newNode.next=current.next;
+        current.next=newNode;
+    }
+
+    //adds a new node with the given new value immediately after the first node that has the value specified
+    public void insertAfter(T y,T value){
+        Node current=head;
+        while (current.value!=y){
+            current=current.next;
+        }
+        Node newNode = new Node(value);
+        newNode.next=current.next;
+        current.next=newNode;
+    }
+
+
 }
