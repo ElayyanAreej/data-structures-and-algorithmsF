@@ -8,19 +8,33 @@ public class App {
     public static void main(String[] args) {
 
        LinkedList<Integer> linkedList= new LinkedList<Integer>();
-       System.out.println(linkedList.toString());
        linkedList.insert(1);
         linkedList.insert(2);
         linkedList.insert(3);
-        System.out.println(linkedList.toString());
-        System.out.println(linkedList.includes(2));
-        System.out.println(linkedList.includes(4));
+        System.out.println("");
+        System.out.println("linked list after insert 3 values:  "+linkedList.toString());
+        System.out.println("--------------------------------------------");
+        System.out.println("");
+        System.out.println("linked list check includes 2 :  "+linkedList.includes(2));
+        System.out.println("linked list check includes 4 :  "+linkedList.includes(4));
+        System.out.println("--------------------------------------------");
+        System.out.println("");
         linkedList.append(0);
-        System.out.println(linkedList.toString());
+        System.out.println("linked list after append 0 value to the last:  "+linkedList.toString());
+        System.out.println("--------------------------------------------");
+        System.out.println("");
         linkedList.insertBefore(1,4);
-        System.out.println(linkedList.toString());
+        System.out.println("linked list after insert Before 1 the value 4 :  "+linkedList.toString());
+        System.out.println("--------------------------------------------");
+        System.out.println("");
         linkedList.insertAfter(1,4);
-        System.out.println(linkedList.toString());
+        System.out.println("linked list after insert After 1 the value 4 :  "+linkedList.toString());
+        System.out.println("--------------------------------------------");
+        System.out.println("");
+        System.out.println("0 kth: "+linkedList.kth(0));
+        System.out.println("2 kth: "+linkedList.kth(2));
+        System.out.println("6 kth: "+linkedList.kth(6));
+
 
     }
 }
