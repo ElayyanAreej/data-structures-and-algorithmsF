@@ -81,4 +81,36 @@ public class LinkedList<T> {
     }
 
 
+    public <T> Object kth(int k) {
+        // to count its content (nodes)
+        Node current = head;
+        int countNode=0;
+        while (current.next != null){
+            current=current.next;
+            countNode++;
+              }
+
+
+
+        
+
+        try {
+            //calc places from the tail
+            int placeFromTail=countNode-k;
+
+            //to get the value
+            current = head;
+            for(int i=0;i<placeFromTail;i++){
+                current=current.next;
+            }
+            return current.value;
+        }
+        catch(Exception e) {
+//            System.out.println("Exception");
+            return e;
+        }
+
+    }
+
+
 }
