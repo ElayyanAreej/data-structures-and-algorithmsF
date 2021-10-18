@@ -15,6 +15,12 @@ public class App {
         System.out.println(linkedList.toString());
         System.out.println(linkedList.includes(2));
         System.out.println(linkedList.includes(4));
+        linkedList.append(0);
+        System.out.println(linkedList.toString());
+        linkedList.insertBefore(1,4);
+        System.out.println(linkedList.toString());
+        linkedList.insertAfter(1,4);
+        System.out.println(linkedList.toString());
 
     }
 }
