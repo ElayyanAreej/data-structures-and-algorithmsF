@@ -30,5 +30,9 @@ adds a new node with the given new value immediately before the first node that 
 arguments: value, new value
 adds a new node with the given new value immediately after the first node that has the value specified
 
+  + **kth**
+argument: a number, k, as a parameter.
+Return the node’s value that is k places from the tail of the linked list.
+
 ## Approach & Efficiency
 get more knowledge to deal with arrays and improve the way of thinking by breaking down the problem into small pieces
