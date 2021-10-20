@@ -92,7 +92,7 @@ public class LinkedList<T> {
 
 
 
-        
+
 
         try {
             //calc places from the tail
