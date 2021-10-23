@@ -56,6 +56,17 @@ public class App {
 
      App.zipLists(linkedList1,linkedList2);
 
+
+     System.out.println("---------------------CC10-----------------------");
+ Stack s=new Stack();
+ s.push(5);
+ s.push(4);
+     s.push(3);
+     System.out.println(s.toString());
+     System.out.println(s.peek());
+     s.pop();
+     System.out.println(s.toString());
+
     }
 
  public static LinkedList zipLists(LinkedList list1, LinkedList list2) {
