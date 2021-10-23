@@ -34,7 +34,45 @@ public class App {
         System.out.println("0 kth: "+linkedList.kth(0));
         System.out.println("2 kth: "+linkedList.kth(2));
         System.out.println("6 kth: "+linkedList.kth(6));
+     System.out.println("--------------------------------------------");
+     System.out.println("linked list before reverse:  "+linkedList.toString());
 
+     linkedList.reverse();
+     System.out.println("linked list after reverse:  "+linkedList.toString());
+
+
+     System.out.println("---------------------CC08-----------------------");
+
+     LinkedList<Integer> linkedList1= new LinkedList<Integer>();
+     linkedList1.insert(1);
+     linkedList1.insert(2);
+     linkedList1.insert(3);
+     LinkedList<Integer> linkedList2= new LinkedList<Integer>();
+     linkedList2.insert(0);
+     linkedList2.insert(0);
+     linkedList2.insert(0);
+     App.zipLists(linkedList1,linkedList2);
 
     }
+
+ public static LinkedList zipLists(LinkedList list1, LinkedList list2) {
+  LinkedList zipped=new LinkedList();
+  Node current1=list1.head;
+  Node current2=list2.head;
+while (current1.next!=null || current2.next!=null) {
+ if (current1.next != null) {
+  zipped.insert(current1.value);
+  current1 = current1.next;
+ }
+ if (current2.next != null) {
+  zipped.insert(current2.value);
+  current2 = current2.next;
+ }
+}
+  zipped.insert(current1.value);
+  zipped.insert(current2.value);
+
+System.out.println(zipped.toString());
+  return  zipped;
+ }
 }

@@ -81,7 +81,7 @@ public class LinkedList<T> {
     }
 
 
-    public <T> Object kth(int k) {
+    public Object kth(int k) {
         // to count its content (nodes)
         Node current = head;
         int countNode=0;
@@ -89,11 +89,6 @@ public class LinkedList<T> {
             current=current.next;
             countNode++;
               }
-
-
-
-
-
         try {
             //calc places from the tail
             int placeFromTail=countNode-k;
@@ -110,6 +105,20 @@ public class LinkedList<T> {
             return e;
         }
 
+    }
+
+    public void  reverse(){
+        Node current=head;
+        Node prev=null;
+        Node pointer = null;
+        while (current.next != null) {
+            pointer = current.next;
+            current.next=prev;
+            prev = current;
+            current = pointer;
+                }
+        current.next=prev;
+              head=current;
     }
 
 
