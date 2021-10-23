@@ -51,6 +51,9 @@ public class App {
      linkedList2.insert(0);
      linkedList2.insert(0);
      linkedList2.insert(0);
+     System.out.println("list1   "+linkedList1.toString());
+     System.out.println("list2   "+linkedList2.toString());
+
      App.zipLists(linkedList1,linkedList2);
 
     }
@@ -72,7 +75,7 @@ while (current1.next!=null || current2.next!=null) {
   zipped.insert(current1.value);
   zipped.insert(current2.value);
 
-System.out.println(zipped.toString());
+System.out.println("zipped List :"+zipped.toString());
   return  zipped;
  }
 }
