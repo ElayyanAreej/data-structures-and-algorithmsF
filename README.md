@@ -11,4 +11,6 @@
 | cc05 Linked List            | [Page Link](cc05/linkedList.md) |
 | cc07 kth from end           | [Page Link](cc05/kth.md)        |
 | cc08 Zip                    | [Page Link](cc05/cc08zip.md)    |
+| cc10 stack & Queue          | [Page Link](cc05/stackQueue.md) |
+
 

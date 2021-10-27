@@ -56,6 +56,37 @@ public class App {
 
      App.zipLists(linkedList1,linkedList2);
 
+
+     System.out.println("---------------------CC10-----------------------");
+ Stack s=new Stack();
+ s.push(5);
+ s.push(4);
+     s.push(3);
+     System.out.println(s.toString());
+     System.out.println(s.peek());
+     s.pop();
+     System.out.println(s.toString());
+     System.out.println("---------------------Queue CC10-----------------------");
+
+     Queue q=new Queue();
+     q.enqueue(6);
+     q.enqueue(4);
+     q.enqueue(3);
+     System.out.println("queue after insert 3 values: "+q.toString());
+        System.out.println("dequeue  "+q.dequeue());
+     System.out.println("queue after dequeue: "+q.toString());
+        System.out.println("dequeue  "+q.dequeue());
+        System.out.println("queue after dequeue: "+q.toString());
+        System.out.println("dequeue  "+q.dequeue());
+        System.out.println("queue after dequeue: "+q.toString());
+        q.enqueue(1);
+        q.enqueue(2);
+        System.out.println("dequeue  "+q.dequeue());
+        System.out.println("queue after dequeue: "+q.toString());
+        System.out.println("is queue Empty ?? : "+q.isEmpty());
+
+
+
     }
 
  public static LinkedList zipLists(LinkedList list1, LinkedList list2) {
