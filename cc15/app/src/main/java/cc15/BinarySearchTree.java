@@ -38,4 +38,22 @@ public class BinarySearchTree {
     public boolean containsNode(int value) {
         return Contains(root, value);
     }
+    public int findMax(Node node)
+    {
+        if (node == null)
+            return Integer.MIN_VALUE;
+
+        int res = (int)node.value;
+        int lres = findMax(node.left);
+        int rres = findMax(node.right);
+
+        if (lres > res)
+            res = lres;
+        if (rres > res)
+            res = rres;
+        return res;
+    }
+
+
+
 }

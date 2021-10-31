@@ -5,13 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b6f0daa-890c-42dc-8b64-f30f26f5509b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/cc15/BinarySearchTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/cc15/BinaryTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/cc15/Node.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../cc05/app/src/main/java/cc05/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../cc05/app/src/main/java/cc05/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../cc05/app/src/main/java/cc05/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/../cc05/app/src/main/java/cc05/Stack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../cc05/out/production/main/cc05/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../cc05/out/production/main/cc05/App.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../cc05/out/production/main/cc05/Stack.class" beforeDir="false" afterPath="$PROJECT_DIR$/../cc05/out/production/main/cc05/Stack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/cc15/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cc15/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/cc15/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cc15/BinarySearchTree.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,5 +86,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
