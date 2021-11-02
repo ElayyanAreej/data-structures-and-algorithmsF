@@ -16,7 +16,7 @@ t1.add(7);
 t1.add(6);
 
 System.out.println(t1.containsNode(5));
-        System.out.println(t1.findMax(t1.root));
+        System.out.println(t1.breadthFirst(t1.root));
 
     }
 }
