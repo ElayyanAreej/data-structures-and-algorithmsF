@@ -1,5 +1,7 @@
 package cc15;
 
+import java.util.ArrayList;
+
 public class BinarySearchTree {
     Node root;
 
@@ -54,6 +56,16 @@ public class BinarySearchTree {
         return res;
     }
 
+public ArrayList<Integer> breadthFirst(Node node){
+        ArrayList<Integer> breadthFirstArrList=new ArrayList<Integer>();
+    breadthFirstArrList.add((int)node.value);
+    breadthFirstArrList.add((int)node.left.value);
+    breadthFirstArrList.add((int)node.right.value);
+    breadthFirst(node.left);
+    breadthFirst(node.right);
 
+
+    return breadthFirstArrList;
+}
 
 }
