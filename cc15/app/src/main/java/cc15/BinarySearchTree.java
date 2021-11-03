@@ -68,4 +68,26 @@ public ArrayList<Integer> breadthFirst(Node node){
     return breadthFirstArrList;
 }
 
+    public void fizzBuzzTree(Node node){
+        int value = (int)node.value;
+        fizzBuzzTree(node.left);
+         fizzBuzzTree(node.right);
+
+        if (value%3==0)
+            node.value="Fizz";
+        if (value%5==0)
+            node.value="Buzz";
+        if (value%5==0&&value%3==0)
+            node.value="FizzBuzz";
+
+    }
+
+    public String toString(Node node){
+        String tree="";
+        tree+=node.value;
+        toString(node.left);
+        toString(node.right);
+        return tree;
+    }
+
 }
