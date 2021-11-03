@@ -1,5 +1,7 @@
 package cc15;
 
+import java.util.ArrayList;
+
 public class BinarySearchTree {
     Node root;
 
@@ -54,6 +56,38 @@ public class BinarySearchTree {
         return res;
     }
 
+public ArrayList<Integer> breadthFirst(Node node){
+        ArrayList<Integer> breadthFirstArrList=new ArrayList<Integer>();
+    breadthFirstArrList.add((int)node.value);
+    breadthFirstArrList.add((int)node.left.value);
+    breadthFirstArrList.add((int)node.right.value);
+    breadthFirst(node.left);
+    breadthFirst(node.right);
 
+
+    return breadthFirstArrList;
+}
+
+    public void fizzBuzzTree(Node node){
+        int value = (int)node.value;
+        fizzBuzzTree(node.left);
+         fizzBuzzTree(node.right);
+
+        if (value%3==0)
+            node.value="Fizz";
+        if (value%5==0)
+            node.value="Buzz";
+        if (value%5==0&&value%3==0)
+            node.value="FizzBuzz";
+
+    }
+
+    public String toString(Node node){
+        String tree="";
+        tree+=node.value;
+        toString(node.left);
+        toString(node.right);
+        return tree;
+    }
 
 }
